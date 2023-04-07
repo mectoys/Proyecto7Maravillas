@@ -32,19 +32,21 @@ def MostrarMapaSieteMaravillas():
             feature_group = folium.FeatureGroup(maravilla, show=False)
             datafiltrada = list(filter(lambda k: maravilla in k, readermaravilla))
             for filamaravilla in datafiltrada:
-                #Agrega el ícono
-                icon = folium.features.CustomIcon(filamaravilla[4], icon_size=(48,48))
-                #Agregar popup que admite código HTML
+                # Agrega el ícono
+                icon = folium.features.CustomIcon(filamaravilla[4], icon_size=(48, 48))
+                # Agregar popup que admite código HTML
                 htmlcode = """<div style="font-family: courier new; color: blue">
                                                  <img src={0} alt={1} width="230" height="172">
-                                                 <br /><span><h5>{2}</h5></span> """.format(filamaravilla[5], filamaravilla[1],
+                                                 <br /><span><h5>{2}</h5></span> """.format(filamaravilla[5],
+                                                                                            filamaravilla[1],
                                                                                             filamaravilla[6])
                 feature_group.add_child(
-                    folium.Marker( [float(filamaravilla[2] ),float(filamaravilla[3])],popup=htmlcode
-                                   ,tooltip=filamaravilla[1],icon=icon))
+                    folium.Marker([float(filamaravilla[2]), float(filamaravilla[3])], popup=htmlcode
+                                  , tooltip=filamaravilla[1], icon=icon))
             feature_group.add_to(m)
         folium.LayerControl().add_to(m)
         m.save(SaveLocation())
+
 
 if __name__ == '__main__':
     MostrarMapaSieteMaravillas()

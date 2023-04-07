@@ -5,9 +5,9 @@ Mapa Interactivos de las 7 Maravillas del Mundo Antiguo y Moderno en Python con 
 
 Folium es una excelente biblioteca de Python que facilita la visualización de datos geoespaciales en mapas interactivos utilizando el poder de Leaflet.js. 
 
-Este proyecto vamos a realizar un proyecto muy interesante aplicando lo aprendido en los video pasados sobre la librería Folium.
+Vamos a realizar un proyecto muy interesante aplicando lo aprendido en los video pasados sobre la librería Folium.
 
- Este proyecto mostrará la ubicación (Latitud y Longitud) de las 7 Maravillas de Mundo Antiguo y Moderno. 
+Mostraremos la ubicación (Latitud y Longitud) de las 7 Maravillas de Mundo Antiguo y Moderno. 
 
 La información a consultar está en un archivo csv que tendrá la localización , link de los ícono, foto y descripción breve .
   

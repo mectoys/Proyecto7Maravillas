@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bfbac50b4dbf1c27482cdbebb1e96784 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bfbac50b4dbf1c27482cdbebb1e96784" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bfbac50b4dbf1c27482cdbebb1e96784 = L.map(
+                "map_bfbac50b4dbf1c27482cdbebb1e96784",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a63a3c44f5663120b777951e9c543cb0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bfbac50b4dbf1c27482cdbebb1e96784);
+        
+    
+            var feature_group_7e731654b5b47a0526b9431d61bd2283 = L.featureGroup(
+                {}
+            ).addTo(map_bfbac50b4dbf1c27482cdbebb1e96784);
+        
+    
+            var marker_22864dc6c9ef97a3f3607ad6b21a43b4 = L.marker(
+                [-13.1631412, -72.5449629],
+                {}
+            ).addTo(feature_group_7e731654b5b47a0526b9431d61bd2283);
+        
+    
+        var custom_icon_c0c764cc7d6de6cbc550aeda12e5fec5 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/null/external-machu-picchu-wonder-of-the-world-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"});
+        marker_22864dc6c9ef97a3f3607ad6b21a43b4.setIcon(custom_icon_c0c764cc7d6de6cbc550aeda12e5fec5);
+        
+    
+        var popup_863535153b0ac07e910af30da2b552ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93f8f3f20806e2bae8a0315ad84ca529 = $(`<div id="html_93f8f3f20806e2bae8a0315ad84ca529" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://upload.wikimedia.org/wikipedia/commons/c/ca/Machu_Picchu%2C_Peru_%282018%29.jpg alt=MAchu Pichu width="230" height="172">                                                  <br /><span><h5>Machu Picchu es considerada, al mismo tiempo, una obra maestra de la arquitectura y la ingeniería.? Sus peculiares características arquitectónicas y paisajísticas, y el velo de misterio que ha tejido a su alrededor buena parte de la literatura publicada sobre el sitio, lo han convertido en uno de los destinos turísticos más famosos del planeta, así como una de las siete maravillas del mundo.</h5></span> </div>`)[0];
+                popup_863535153b0ac07e910af30da2b552ea.setContent(html_93f8f3f20806e2bae8a0315ad84ca529);
+            
+        
+
+        marker_22864dc6c9ef97a3f3607ad6b21a43b4.bindPopup(popup_863535153b0ac07e910af30da2b552ea)
+        ;
+
+        
+    
+    
+            marker_22864dc6c9ef97a3f3607ad6b21a43b4.bindTooltip(
+                `<div>
+                     MAchu Pichu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7071e134dd30b41119b9dff6156588b7 = L.marker(
+                [40.416667, 116.083333],
+                {}
+            ).addTo(feature_group_7e731654b5b47a0526b9431d61bd2283);
+        
+    
+        var custom_icon_6c94b45fd361f85e3a07cafb7c12f073 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/cotton/64/null/great-wall--v1.png"});
+        marker_7071e134dd30b41119b9dff6156588b7.setIcon(custom_icon_6c94b45fd361f85e3a07cafb7c12f073);
+        
+    
+        var popup_5a19471f787d1d564505c63fd70c9c10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24c2d60d3ced0cea37b22cd15f99f7d1 = $(`<div id="html_24c2d60d3ced0cea37b22cd15f99f7d1" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://static.nationalgeographic.es/files/styles/image_3200/public/3075.600x450.webp?w=710&h=533 alt=La Gran Muralla China width="230" height="172">                                                  <br /><span><h5>La Gran Muralla china es una antigua fortificación china, construida y reconstruida entre el siglo V a. C. y el siglo XVI para proteger la frontera norte del Imperio chino durante las sucesivas dinastías imperiales de los ataques de los nómadas xiongnu de Mongolia y Manchuria.</h5></span> </div>`)[0];
+                popup_5a19471f787d1d564505c63fd70c9c10.setContent(html_24c2d60d3ced0cea37b22cd15f99f7d1);
+            
+        
+
+        marker_7071e134dd30b41119b9dff6156588b7.bindPopup(popup_5a19471f787d1d564505c63fd70c9c10)
+        ;
+
+        
+    
+    
+            marker_7071e134dd30b41119b9dff6156588b7.bindTooltip(
+                `<div>
+                     La Gran Muralla China
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_027e9e703461439fba01cb6d328c6f68 = L.marker(
+                [20.683056, -88.568611],
+                {}
+            ).addTo(feature_group_7e731654b5b47a0526b9431d61bd2283);
+        
+    
+        var custom_icon_a9b60da7e97d739eb2aa841a1d39caa5 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/external-wanicon-flat-wanicon/64/null/external-chichen-itza-landmark-wanicon-flat-wanicon.png"});
+        marker_027e9e703461439fba01cb6d328c6f68.setIcon(custom_icon_a9b60da7e97d739eb2aa841a1d39caa5);
+        
+    
+        var popup_d01404c45fea23f384e81a68b9674c93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f3510111897d1b2e2f8934fec4497bd = $(`<div id="html_7f3510111897d1b2e2f8934fec4497bd" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://www.chichenitza.com/public/assets/img/ruins/el-castillo-chichen-itza.jpg alt=El Castillo, Chichén Itzá width="230" height="172">                                                  <br /><span><h5>Es uno de los principales sitios arqueológicos mayas de la península de Yucatán, en México. Se encuentra a escasos 2.5 km de la localidad de Pisté, en el municipio de Tinum, en el estado de Yucatán, al sureste del país. Consistió en una ciudad o un centro ceremonial que pasó por diversas épocas constructivas e influencias de los distintos pueblos que la ocuparon y que la impulsaron desde su fundación.</h5></span> </div>`)[0];
+                popup_d01404c45fea23f384e81a68b9674c93.setContent(html_7f3510111897d1b2e2f8934fec4497bd);
+            
+        
+
+        marker_027e9e703461439fba01cb6d328c6f68.bindPopup(popup_d01404c45fea23f384e81a68b9674c93)
+        ;
+
+        
+    
+    
+            marker_027e9e703461439fba01cb6d328c6f68.bindTooltip(
+                `<div>
+                     El Castillo, Chichén Itzá
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1bfb1c30bbd29698739d6e4309d984b = L.marker(
+                [41.890278, 12.492222],
+                {}
+            ).addTo(feature_group_7e731654b5b47a0526b9431d61bd2283);
+        
+    
+        var custom_icon_ca895f4d74652f81c6495c4fab30f807 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/bubbles/50/null/coliseum.png"});
+        marker_a1bfb1c30bbd29698739d6e4309d984b.setIcon(custom_icon_ca895f4d74652f81c6495c4fab30f807);
+        
+    
+        var popup_c9ecb32a6d8f6dfa8a3f3885cf5eabb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f693af9f69aef34b61202bb2d7e0aa1 = $(`<div id="html_8f693af9f69aef34b61202bb2d7e0aa1" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://historia.nationalgeographic.com.es/medio/2018/03/01/coliseo-romano_16022ed4_1280x853.jpg alt=El Coliseo de Roma width="230" height="172">                                                  <br /><span><h5>Es un anfiteatro de la época del Imperio romano, construido en el siglo I. Está ubicado en el este del Foro Romano, y fue el más grande de los que se construyeron en el Imperio romano.</h5></span> </div>`)[0];
+                popup_c9ecb32a6d8f6dfa8a3f3885cf5eabb3.setContent(html_8f693af9f69aef34b61202bb2d7e0aa1);
+            
+        
+
+        marker_a1bfb1c30bbd29698739d6e4309d984b.bindPopup(popup_c9ecb32a6d8f6dfa8a3f3885cf5eabb3)
+        ;
+
+        
+    
+    
+            marker_a1bfb1c30bbd29698739d6e4309d984b.bindTooltip(
+                `<div>
+                     El Coliseo de Roma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87356fe645ccbb0bea5c7787bc868356 = L.marker(
+                [-22.951916, -43.210464],
+                {}
+            ).addTo(feature_group_7e731654b5b47a0526b9431d61bd2283);
+        
+    
+        var custom_icon_c5be918f436bbcdcf9334df8603b81e8 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/color/48/null/statue-of-christ-the-redeemer.png"});
+        marker_87356fe645ccbb0bea5c7787bc868356.setIcon(custom_icon_c5be918f436bbcdcf9334df8603b81e8);
+        
+    
+        var popup_70eef750e4b58782bf0d1512bddbce9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c468c3120948b1a46fec517f1b6f346b = $(`<div id="html_c468c3120948b1a46fec517f1b6f346b" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://static.nationalgeographic.es/files/styles/image_3200/public/rio-de-janeiro_6647_600x450.webp?w=1190&h=893 alt=La estatua del Cristo Redentor width="230" height="172">                                                  <br /><span><h5>El Cristo Redentor es uno de los atractivos turísticos más importantes de Brasil y, para los creyentes, un lugar de peregrinación. Al cumplirse los ochenta años de su inauguración, en 2011</h5></span> </div>`)[0];
+                popup_70eef750e4b58782bf0d1512bddbce9d.setContent(html_c468c3120948b1a46fec517f1b6f346b);
+            
+        
+
+        marker_87356fe645ccbb0bea5c7787bc868356.bindPopup(popup_70eef750e4b58782bf0d1512bddbce9d)
+        ;
+
+        
+    
+    
+            marker_87356fe645ccbb0bea5c7787bc868356.bindTooltip(
+                `<div>
+                     La estatua del Cristo Redentor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0edbe593b9689f5007430f17c4498873 = L.marker(
+                [27.174167, 78.042222],
+                {}
+            ).addTo(feature_group_7e731654b5b47a0526b9431d61bd2283);
+        
+    
+        var custom_icon_fd220d528d4067a0548a25e5bf2a5eb9 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/external-justicon-flat-justicon/64/null/external-taj-mahal-landmark-justicon-flat-justicon.png"});
+        marker_0edbe593b9689f5007430f17c4498873.setIcon(custom_icon_fd220d528d4067a0548a25e5bf2a5eb9);
+        
+    
+        var popup_fd002afc85ebf583e49212e7ad7f10ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cf1be6152c248b680ec285aeb6b0578 = $(`<div id="html_2cf1be6152c248b680ec285aeb6b0578" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://static.nationalgeographicla.com/files/styles/image_3200/public/93080.webp?w=710&h=533 alt=El Taj Mahal width="230" height="172">                                                  <br /><span><h5>El Taj Mahal es considerado a nivel mundial uno de los edificios más hermosos que se hayan creado. La exquisita estructura de mármol en Agra, India, es un mausoleo, un monumento eterno al amor de un hombre hacia su esposa favorita. Además, es una evidencia eterna de logros científicos y artísticos de un imperio lleno de riquezas.</h5></span> </div>`)[0];
+                popup_fd002afc85ebf583e49212e7ad7f10ba.setContent(html_2cf1be6152c248b680ec285aeb6b0578);
+            
+        
+
+        marker_0edbe593b9689f5007430f17c4498873.bindPopup(popup_fd002afc85ebf583e49212e7ad7f10ba)
+        ;
+
+        
+    
+    
+            marker_0edbe593b9689f5007430f17c4498873.bindTooltip(
+                `<div>
+                     El Taj Mahal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5932fa7e4240341d0cb77a9d68481183 = L.marker(
+                [30.321944, 35.451389],
+                {}
+            ).addTo(feature_group_7e731654b5b47a0526b9431d61bd2283);
+        
+    
+        var custom_icon_3629a9759329bf5b8b8c2ab47832add1 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/null/external-petra-landmark-wanicon-lineal-color-wanicon.png"});
+        marker_5932fa7e4240341d0cb77a9d68481183.setIcon(custom_icon_3629a9759329bf5b8b8c2ab47832add1);
+        
+    
+        var popup_0fc0cc191af961b3f9c0cc30e06ff872 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7ce7dc852aeafffd79e6eb69a8e112b = $(`<div id="html_f7ce7dc852aeafffd79e6eb69a8e112b" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://static.nationalgeographic.es/files/styles/image_3200/public/petra-world-heritage-jordan.webp?w=1450&h=816 alt=La fachada principal de Petra (Jordania) width="230" height="172">                                                  <br /><span><h5>El asentamiento de Petra se localiza en un valle angosto, al este del valle de la Aravá que se extiende desde el mar Muerto hasta el Golfo de Aqaba. Los restos más célebres de Petra son sin duda sus construcciones labradas en la misma roca del valle (hemispeos), en particular, los edificios conocidos como el Khazneh (‘el Tesoro’) y el Deir (‘el Monasterio’).</h5></span> </div>`)[0];
+                popup_0fc0cc191af961b3f9c0cc30e06ff872.setContent(html_f7ce7dc852aeafffd79e6eb69a8e112b);
+            
+        
+
+        marker_5932fa7e4240341d0cb77a9d68481183.bindPopup(popup_0fc0cc191af961b3f9c0cc30e06ff872)
+        ;
+
+        
+    
+    
+            marker_5932fa7e4240341d0cb77a9d68481183.bindTooltip(
+                `<div>
+                     La fachada principal de Petra (Jordania)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_38683c303d0d89628c74e2a220f7b5fe = L.featureGroup(
+                {}
+            ).addTo(map_bfbac50b4dbf1c27482cdbebb1e96784);
+        
+    
+            var marker_d9fb1cc1dff87ad70b6bf494552e599e = L.marker(
+                [32.54246411, 44.42086784],
+                {}
+            ).addTo(feature_group_38683c303d0d89628c74e2a220f7b5fe);
+        
+    
+        var custom_icon_82d22515b2dec810f91de12f51fac27e = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/color/48/null/garden.png"});
+        marker_d9fb1cc1dff87ad70b6bf494552e599e.setIcon(custom_icon_82d22515b2dec810f91de12f51fac27e);
+        
+    
+        var popup_9d728cdf54089d41453094ef9472e443 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56ed88f5425891908b3760f69655a5f8 = $(`<div id="html_56ed88f5425891908b3760f69655a5f8" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://historia.nationalgeographic.com.es/medio/2019/05/07/7-maravillas-jardines-babilonia-antes_7654bcc8_1400x788.jpg alt=Jardines Colgantes de Babilonia width="230" height="172">                                                  <br /><span><h5>Los Jardines Colgantes de Babilonia, una de las siete maravillas del mundo antiguo, fueron construidos en el siglo VI a. C. durante el reinado de Nabucodonosor II en la antigua ciudad de Babilonia (Babel de los textos bíblicos), a orillas del río Éufrates (Mesopotamia). Las aguas para regar las plantas eran traídas desde las orillas del río, que se encontraba en las faldas de la montaña. En los jardines se plantaban palmeras y árboles frutales, como el dátil y los cocos.</h5></span> </div>`)[0];
+                popup_9d728cdf54089d41453094ef9472e443.setContent(html_56ed88f5425891908b3760f69655a5f8);
+            
+        
+
+        marker_d9fb1cc1dff87ad70b6bf494552e599e.bindPopup(popup_9d728cdf54089d41453094ef9472e443)
+        ;
+
+        
+    
+    
+            marker_d9fb1cc1dff87ad70b6bf494552e599e.bindTooltip(
+                `<div>
+                     Jardines Colgantes de Babilonia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_350dd61e72a55528a3335f107450f9b0 = L.marker(
+                [29.979167, 31.134167],
+                {}
+            ).addTo(feature_group_38683c303d0d89628c74e2a220f7b5fe);
+        
+    
+        var custom_icon_45bf2858e056c3032ae9cffcd3448475 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/external-smashingstocks-isometric-smashing-stocks/55/null/external-pyramid-travel-summer-vacation-smashingstocks-isometric-smashing-stocks.png"});
+        marker_350dd61e72a55528a3335f107450f9b0.setIcon(custom_icon_45bf2858e056c3032ae9cffcd3448475);
+        
+    
+        var popup_a8947db3414b9af2d7118163d857b257 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9be35b442c40be698dc25842c48cc93 = $(`<div id="html_c9be35b442c40be698dc25842c48cc93" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://historia.nationalgeographic.com.es/medio/2020/11/09/istock-516063860_26582ad8_1254x836.jpg alt=La gran pirámide de Giza (Egipto) width="230" height="172">                                                  <br /><span><h5>La Gran Pirámide de Guiza (también conocida como pirámide de Keops o de Jufu) es, además de la mayor de las pirámides de Egipto, la más antigua de las siete maravillas del mundo antiguo y la única que todavía perdura. Fue ordenada a construir por el faraón Keops de la cuarta dinastía del Antiguo Egipto. Acerca del arquitecto de dicha obra, algunos estudiosos nombran a Hemiunu, pero no está comprobado.</h5></span> </div>`)[0];
+                popup_a8947db3414b9af2d7118163d857b257.setContent(html_c9be35b442c40be698dc25842c48cc93);
+            
+        
+
+        marker_350dd61e72a55528a3335f107450f9b0.bindPopup(popup_a8947db3414b9af2d7118163d857b257)
+        ;
+
+        
+    
+    
+            marker_350dd61e72a55528a3335f107450f9b0.bindTooltip(
+                `<div>
+                     La gran pirámide de Giza (Egipto)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_294bd01a92cc05c264d927c68500c05b = L.marker(
+                [37.638333, 21.630833],
+                {}
+            ).addTo(feature_group_38683c303d0d89628c74e2a220f7b5fe);
+        
+    
+        var custom_icon_91404543a78e84154887993531813340 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-zeus-supernatural-flaticons-flat-flat-icons.png"});
+        marker_294bd01a92cc05c264d927c68500c05b.setIcon(custom_icon_91404543a78e84154887993531813340);
+        
+    
+        var popup_28eb1b52d1373e44e38376fe772da1c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30258288fe637c85a1fb2c4d944407c8 = $(`<div id="html_30258288fe637c85a1fb2c4d944407c8" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://historia.nationalgeographic.com.es/medio/2019/05/20/06-seven-wonders-olympia_07dedfb5_1400x788.jpg alt=Estatua de Zeus (Grecia) width="230" height="172">                                                  <br /><span><h5>La Estatua de Zeus en Olimpia fue una gran escultura crisoelefantina creada por el escultor Fidias. Situada en Olimpia, (Grecia), se considera una de las Siete Maravillas del Mundo Antiguo. Si bien se han conservado los restos de los cimientos de la base de la estatua en Olimpia, la estatua en sí se ha perdido y solo se puede reconstruir a partir de representaciones en monedas y descripciones antiguas. Según una leyenda del siglo XII, la estatua se encontraba en Constantinopla en el siglo V d. C., donde fue destruida y se perdió en un incendio en el año 475. Solo se sabe de ella gracias a esas descripciones de historiadores antiguos y representaciones en monedas.</h5></span> </div>`)[0];
+                popup_28eb1b52d1373e44e38376fe772da1c5.setContent(html_30258288fe637c85a1fb2c4d944407c8);
+            
+        
+
+        marker_294bd01a92cc05c264d927c68500c05b.bindPopup(popup_28eb1b52d1373e44e38376fe772da1c5)
+        ;
+
+        
+    
+    
+            marker_294bd01a92cc05c264d927c68500c05b.bindTooltip(
+                `<div>
+                     Estatua de Zeus (Grecia)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b49d4059f98cc0e68a91fa4b9458797 = L.marker(
+                [31.214167, 29.885],
+                {}
+            ).addTo(feature_group_38683c303d0d89628c74e2a220f7b5fe);
+        
+    
+        var custom_icon_b0bf8589a1762fc9211b95ce34163f33 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/null/external-pharos-of-alexandria-wonder-of-the-world-vitaliy-gorbachev-flat-vitaly-gorbachev.png"});
+        marker_3b49d4059f98cc0e68a91fa4b9458797.setIcon(custom_icon_b0bf8589a1762fc9211b95ce34163f33);
+        
+    
+        var popup_5cfcfb48cdcff9374d5c6637ac5cc32e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e623e26e2c7e30bca80d35e1b55bf4d1 = $(`<div id="html_e623e26e2c7e30bca80d35e1b55bf4d1" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://historia.nationalgeographic.com.es/medio/2019/05/07/7-maravillas-faro-alejandria-antes_809e63ba_1400x788.jpg alt=El faro de Alejandría (Egipto) width="230" height="172">                                                  <br /><span><h5>El Faro de Alejandría fue una torre construida en el siglo III a. C. durante la dinastía ptolemaica, en el reinado de Ptolomeo II (280-247 a. C.) en la isla de Faro en Alejandría, Egipto, para servir como punto de referencia del puerto y como faro, con una altura estimada de al menos 100 metros. Fue una de las estructuras más altas hechas por el hombre durante muchos siglos, y forma parte de las siete maravillas del mundo antiguo por Antípatro de Sidón.</h5></span> </div>`)[0];
+                popup_5cfcfb48cdcff9374d5c6637ac5cc32e.setContent(html_e623e26e2c7e30bca80d35e1b55bf4d1);
+            
+        
+
+        marker_3b49d4059f98cc0e68a91fa4b9458797.bindPopup(popup_5cfcfb48cdcff9374d5c6637ac5cc32e)
+        ;
+
+        
+    
+    
+            marker_3b49d4059f98cc0e68a91fa4b9458797.bindTooltip(
+                `<div>
+                     El faro de Alejandría (Egipto)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08b23a0744a8d2932877b2fccfcc36f8 = L.marker(
+                [37.037944, 27.424056],
+                {}
+            ).addTo(feature_group_38683c303d0d89628c74e2a220f7b5fe);
+        
+    
+        var custom_icon_243989ad126b8bc82954d3f8eec48604 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/null/external-halicarnassus-mausoleum-wonder-of-the-world-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"});
+        marker_08b23a0744a8d2932877b2fccfcc36f8.setIcon(custom_icon_243989ad126b8bc82954d3f8eec48604);
+        
+    
+        var popup_c90f9776bde5980ac461e30a0a550a69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d64a90fc443fd7243b2d1d7bbb464f8 = $(`<div id="html_1d64a90fc443fd7243b2d1d7bbb464f8" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://historia.nationalgeographic.com.es/medio/2019/05/13/7-maravillas-mausoleo-halicarnaso-antes_e72b0aa3_1400x788.jpg alt=Mausoleo de Halicarnaso (Turquía) width="230" height="172">                                                  <br /><span><h5>El Mausoleo de Halicarnaso o el Sepulcro de Mausolo fue un monumento funerario suntuoso construido entre el año 353 a. C. y el 350 a. C.? en Halicarnaso (actualmente Bodrum, Turquía) para Mausolo, un sátrapa del Imperio persa. La estructura fue encargada por su esposa y hermana, Artemisia II de Caria, a los arquitectos griegos Sátiro de Paros y Piteo.</h5></span> </div>`)[0];
+                popup_c90f9776bde5980ac461e30a0a550a69.setContent(html_1d64a90fc443fd7243b2d1d7bbb464f8);
+            
+        
+
+        marker_08b23a0744a8d2932877b2fccfcc36f8.bindPopup(popup_c90f9776bde5980ac461e30a0a550a69)
+        ;
+
+        
+    
+    
+            marker_08b23a0744a8d2932877b2fccfcc36f8.bindTooltip(
+                `<div>
+                     Mausoleo de Halicarnaso (Turquía)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccb36384aacf7821ee15f2e83177b437 = L.marker(
+                [36.451111, 28.227778],
+                {}
+            ).addTo(feature_group_38683c303d0d89628c74e2a220f7b5fe);
+        
+    
+        var custom_icon_9a4553fa6ed331a1f306070396c6c4a1 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/null/external-colossus-wonder-of-the-world-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"});
+        marker_ccb36384aacf7821ee15f2e83177b437.setIcon(custom_icon_9a4553fa6ed331a1f306070396c6c4a1);
+        
+    
+        var popup_593144324e52c50ba9ae5440770bf13a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38f13a598e92befa22778ed3257e4014 = $(`<div id="html_38f13a598e92befa22778ed3257e4014" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://historia.nationalgeographic.com.es/medio/2019/05/07/7-maravillas-coloso-rodas-antes_f9c8f9d9_1400x788.jpg alt=Coloso de Rodas (Grecia) width="230" height="172">                                                  <br /><span><h5>El coloso de Rodas era una gran estatua del dios sol griego Helios, realizada por el escultor Cares de Lindos en la isla de Rodas (Grecia) en 280 a. C. y destruida por un terremoto en 226 a. C. Es considerada una de las Siete maravillas del mundo antiguo.</h5></span> </div>`)[0];
+                popup_593144324e52c50ba9ae5440770bf13a.setContent(html_38f13a598e92befa22778ed3257e4014);
+            
+        
+
+        marker_ccb36384aacf7821ee15f2e83177b437.bindPopup(popup_593144324e52c50ba9ae5440770bf13a)
+        ;
+
+        
+    
+    
+            marker_ccb36384aacf7821ee15f2e83177b437.bindTooltip(
+                `<div>
+                     Coloso de Rodas (Grecia)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30e491089e5b071d17de83428646ed0a = L.marker(
+                [34.751015, 40.7270525],
+                {}
+            ).addTo(feature_group_38683c303d0d89628c74e2a220f7b5fe);
+        
+    
+        var custom_icon_a238e468ea0c931cb738b665d872e119 = L.icon({"iconSize": [48, 48], "iconUrl": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-temple-history-flaticons-flat-flat-icons.png"});
+        marker_30e491089e5b071d17de83428646ed0a.setIcon(custom_icon_a238e468ea0c931cb738b665d872e119);
+        
+    
+        var popup_34e7e0f73609f84fd98251cacd27a9a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3eb0422b205a65c6ec92d683387bbf7d = $(`<div id="html_3eb0422b205a65c6ec92d683387bbf7d" style="width: 100.0%; height: 100.0%;"><div style="font-family: courier new; color: blue">                                                  <img src=https://historia.nationalgeographic.com.es/medio/2019/05/20/07-seven-wonders-ephesus_29c1c04b_1400x788.jpg alt=Templo de Artemisa (Turquía) width="230" height="172">                                                  <br /><span><h5>El Templo de Artemisa fue un templo ubicado en la ciudad de Éfeso, Turquía, dedicado a la diosa Artemisa, denominada Diana por los romanos. Su construcción fue comenzada por el rey Creso de Lidia y duró unos 120 años.</h5></span> </div>`)[0];
+                popup_34e7e0f73609f84fd98251cacd27a9a6.setContent(html_3eb0422b205a65c6ec92d683387bbf7d);
+            
+        
+
+        marker_30e491089e5b071d17de83428646ed0a.bindPopup(popup_34e7e0f73609f84fd98251cacd27a9a6)
+        ;
+
+        
+    
+    
+            marker_30e491089e5b071d17de83428646ed0a.bindTooltip(
+                `<div>
+                     Templo de Artemisa (Turquía)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_d1181a073b7ffd7eef5ffbb8be95ffc5 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a63a3c44f5663120b777951e9c543cb0,
+                },
+                overlays :  {
+                    "Las 7 Maravillas del Mundo Moderno" : feature_group_7e731654b5b47a0526b9431d61bd2283,
+                    "Las 7 Maravillas del Mundo Antiguo" : feature_group_38683c303d0d89628c74e2a220f7b5fe,
+                },
+            };
+            L.control.layers(
+                layer_control_d1181a073b7ffd7eef5ffbb8be95ffc5.base_layers,
+                layer_control_d1181a073b7ffd7eef5ffbb8be95ffc5.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_bfbac50b4dbf1c27482cdbebb1e96784);
+            feature_group_7e731654b5b47a0526b9431d61bd2283.remove();
+            feature_group_38683c303d0d89628c74e2a220f7b5fe.remove();
+        
+</script>
+</html>
